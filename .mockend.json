@@ -44,16 +44,28 @@
       "belongsTo": "Post"
     }
   },
-  "Monsters": [
-    {
-      "name": "monster1",
-      "age": "1",
-      "id": "12345"
+  "Monster": {
+    "name": {
+      "string": [
+        "mon1",
+        "mon2",
+        "mon3"
+      ]
     },
-    {
-      "name": "monster2",
-      "age": "2",
-      "id": "12346"
+    "id": {
+      "int": {
+        "min": 0,
+        "max": 10000
+      }
+    },
+    "color": {
+      "regexp": "#[0-9A-F]{6}"
+    },
+    "createdAr": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
     }
-  ]
+  }
 }
